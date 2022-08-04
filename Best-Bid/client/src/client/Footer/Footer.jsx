@@ -88,13 +88,13 @@ const Footer = () => {
       
 
       <div className="col-lg-3 col-md-6 footer-contact">
-        <h3>Bestbid</h3>
+        <h3>HotBid</h3>
         <p>
-          Dharmsinh Desai University<br/>
-          Nadiad, College Rd<br/>
-          Gujarat 387001 <br/><br/>
-          <strong>Phone:</strong>+91 8980452333<br/>
-          <strong>Email:</strong> nihalparmar@gmail.com<br/>
+          College of engineering Cherthala<br/>
+          Pallipuram<br/>
+          Kerala 688541 <br/><br/>
+          <strong>Phone:</strong>+91 8980452348<br/>
+          <strong>Email:</strong> anusreeganganair@gmail.com<br/>
         </p>
       </div>
 
@@ -150,7 +150,7 @@ const Footer = () => {
 
 <div className="container py-4">
   <div className="copyright">
-    &copy; Copyright <strong><span>Bestbid</span></strong>. All Rights Reserved
+    &copy; Copyright <strong><span>HotBid</span></strong>. All Rights Reserved
   </div>
   
 </div>

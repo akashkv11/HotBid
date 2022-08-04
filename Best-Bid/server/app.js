@@ -8,7 +8,7 @@ const cloudinary = require("cloudinary");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const cors=require("cors");
-const stripe=require("stripe")("sk_test_51KVzMySFWvR6XE1YibTsOQVGXXVtCjUY2IvNlXEbzlCTOb0hkngXsvAI2kcExNchbesK4jiTv4cpPCOjMHN7jYgF00TjjjozYy")
+const stripe=require("stripe")("sk_test_51LEFHJSDcMpIiu3oVLKgNN7Q9EGt5AfYIxW6c2ZchcabrhAdCvFe1BKQxJ71IPO8dAIX40oDO9IcyMLAHhZ2aHh00t5B29Um8")
 const uuid=require("uuid");
 
 

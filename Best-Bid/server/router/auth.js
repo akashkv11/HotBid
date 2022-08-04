@@ -3,7 +3,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const authenticate = require("../middleware/authenticate");
-
+const validatePhoneNumber = require('validate-phone-number-node-js');
+const validator = require("email-validator");
 
 require('../db/conn');
 const User = require('../model/userSchema');
@@ -21,10 +22,37 @@ router.post('/register', async (req, res) => {
     }
 
 
-    if(phone.length < 10) {
-        return res.status(400).json({ error: "password should be minimum 10 characters" });
+    if(phone.length === 10 ) {
+        
+    var result = validatePhoneNumber.validate(phone);
+    
+    if(!result)
+    {
+        return res.status(400).json({ error: " Invalid phone number" });
+    }
     }
 
+    else{
+        
+        return res.status(400).json({ error: " Invalid phone number" });
+    }
+    
+    
+
+    var mail = validator.validate(email);
+
+
+    
+
+    
+    if(!mail)
+    {
+        return res.status(400).json({ error: " Invalid email id" });
+    }
+
+
+
+    
     if(password.length < 8) {
         return res.status(400).json({ error: "password should be minimum 8 characters" });
 }

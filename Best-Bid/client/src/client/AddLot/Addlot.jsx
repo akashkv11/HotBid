@@ -238,7 +238,6 @@ if(reader.readyState === 2){
                   <div className="col-sm-10">
 
                     <input className="form-control" type="file" id="formFile"
-                    type="file"
                       name='avatar'
                       accept='image/*'
                       onChange={createProductImageChange}

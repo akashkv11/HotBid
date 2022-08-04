@@ -28,13 +28,13 @@ req.rootUser = rootUser;
 req.userID = rootUser._id;
 } catch (err) {
     console.log(`error token verification`);
-    res.status(401).send('Unorthorised: No token provided');
+    res.status(401).send('Unauthorised: No token provided');
 }
 
 let images = [];
 
 if (typeof req.body.images === "string") {
-    // Single Image recived
+    // Single Image recieved
 
     images.push(req.body.images);
 
